@@ -763,37 +763,500 @@
     </section>
 
 
-    <!-- CTA -->
+<!-- CTA -->
 
-    <section id="lien-he">
+   <!-- ============================= -->
+<!--  GỬI YÊU CẦU VANNIAN -->
+<!-- ============================= -->
 
-        <div class="container">
+<section id="lien-he">
 
-            <div class="cta">
+    <div class="container">
 
-                <h2>🔥 ANH EM ĐANG CẦN GÌ?</h2>
+        <div class="request-box">
+
+            <div class="request-title">
+
+                <small>REQUEST CENTER</small>
+
+                <h2>🔥 GỬI YÊU CẦU CHO VANNIAN</h2>
 
                 <p>
-                    Anh em cần file gì hay đang gặp khó khăn
-                    ở tựa game nào? Đừng ngần ngại để lại yêu cầu.
-                    Với tinh thần hỗ trợ hết mình cho tất cả anh em,
-                    VANNIAN sẽ cố gắng phản hồi và cung cấp
-                    thông tin hữu ích nhất.
+                    Bạn đang cần tìm game, phần mềm hoặc gặp lỗi?
+                    Hãy điền thông tin bên dưới, VANNIAN sẽ xem
+                    và phản hồi cho bạn.
                 </p>
-
-            
-
-                <a href="#" class="btn btn-primary">
-                    📩 Gửi yêu cầu
-                </a>
 
             </div>
 
+
+            <!-- FORM -->
+
+            <form id="requestForm">
+
+
+                <!-- TÊN GAME -->
+
+                <div class="form-group">
+
+                    <label>
+                        🎮 Tên game / phần mềm
+                    </label>
+
+                    <input
+                        type="text"
+                        id="gameName"
+                        placeholder="Ví dụ: Minecraft, GTA V..."
+                        required
+                    >
+
+                </div>
+
+
+                <!-- THIẾT BỊ -->
+
+                <div class="form-group">
+
+                    <label>
+                        💻 Thiết bị
+                    </label>
+
+                    <select id="device" required>
+
+                        <option value="">
+                            -- Chọn thiết bị --
+                        </option>
+
+                        <option value="PC">
+                            🖥️ PC / Windows
+                        </option>
+
+                        <option value="Android">
+                            📱 Android
+                        </option>
+
+                        <option value="iPhone / iPad">
+                            🍎 iPhone / iPad
+                        </option>
+
+                        <option value="Console">
+                            🎮 Console
+                        </option>
+
+                        <option value="Khác">
+                            ⚙️ Khác
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- NỘI DUNG -->
+
+                <div class="form-group">
+
+                    <label>
+                        📝 Nội dung yêu cầu
+                    </label>
+
+                    <textarea
+                        id="requestContent"
+                        rows="5"
+                        placeholder="Hãy mô tả game, file hoặc lỗi bạn đang gặp..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <!-- TELEGRAM -->
+
+                <div class="form-group">
+
+                    <label>
+                        ✈️ Telegram của bạn
+                    </label>
+
+                    <input
+                        type="text"
+                        id="customerTelegram"
+                        placeholder="@username của bạn (không bắt buộc)"
+                    >
+
+                </div>
+
+
+                <!-- BUTTON -->
+
+                <button
+                    type="submit"
+                    class="request-button"
+                >
+                    🚀 GỬI YÊU CẦU → TELEGRAM
+                </button>
+
+
+                <p class="form-note">
+                    🔒 Thông tin chỉ được sử dụng để phản hồi yêu cầu.
+                </p>
+
+            </form>
+
         </div>
 
-    </section>
+    </div>
+
+</section>
 
 
+<!-- ============================= -->
+<!-- CSS -->
+<!-- ============================= -->
+
+<style>
+
+.request-box {
+
+    max-width: 850px;
+
+    margin: auto;
+
+    padding: 45px;
+
+    border-radius: 22px;
+
+    background:
+        radial-gradient(
+            circle at top,
+            rgba(0, 119, 255, 0.12),
+            rgba(3, 9, 16, 0.95) 65%
+        );
+
+    border: 1px solid rgba(0, 153, 255, 0.18);
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.35);
+
+}
+
+
+.request-title {
+
+    text-align: center;
+
+    margin-bottom: 35px;
+
+}
+
+
+.request-title small {
+
+    color: #0099ff;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+}
+
+
+.request-title h2 {
+
+    margin-top: 10px;
+
+    font-size: clamp(28px, 5vw, 42px);
+
+    color: #ffffff;
+
+}
+
+
+.request-title p {
+
+    max-width: 650px;
+
+    margin: 15px auto 0;
+
+    color: #8fa4b7;
+
+    font-size: 15px;
+
+}
+
+
+.form-group {
+
+    margin-bottom: 22px;
+
+}
+
+
+.form-group label {
+
+    display: block;
+
+    margin-bottom: 9px;
+
+    color: #dcecff;
+
+    font-weight: bold;
+
+    font-size: 15px;
+
+}
+
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+
+    width: 100%;
+
+    padding: 15px 16px;
+
+    border-radius: 11px;
+
+    border: 1px solid rgba(0, 153, 255, 0.18);
+
+    background: rgba(2, 10, 18, 0.9);
+
+    color: #ffffff;
+
+    outline: none;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 15px;
+
+    transition: 0.3s;
+
+}
+
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+
+    color: #617587;
+
+}
+
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+
+    border-color: #008cff;
+
+    box-shadow:
+        0 0 0 3px rgba(0, 140, 255, 0.08),
+        0 0 20px rgba(0, 140, 255, 0.08);
+
+}
+
+
+.form-group textarea {
+
+    resize: vertical;
+
+    min-height: 130px;
+
+}
+
+
+.form-group select option {
+
+    background: #07111c;
+
+    color: white;
+
+}
+
+
+.request-button {
+
+    width: 100%;
+
+    padding: 16px;
+
+    border: none;
+
+    border-radius: 11px;
+
+    cursor: pointer;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0077ff,
+            #00aaff
+        );
+
+    box-shadow:
+        0 8px 30px rgba(0, 132, 255, 0.22);
+
+    transition: 0.3s;
+
+}
+
+
+.request-button:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 12px 35px rgba(0, 153, 255, 0.4);
+
+}
+
+
+.request-button:active {
+
+    transform: scale(0.98);
+
+}
+
+
+.form-note {
+
+    text-align: center;
+
+    margin-top: 15px;
+
+    color: #617587;
+
+    font-size: 12px;
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .request-box {
+
+        padding: 28px 20px;
+
+        border-radius: 18px;
+
+    }
+
+    .request-title h2 {
+
+        font-size: 28px;
+
+    }
+
+    .request-title p {
+
+        font-size: 14px;
+
+    }
+
+}
+
+</style>
+
+
+<!-- ============================= -->
+<!-- JAVASCRIPT -->
+<!-- ============================= -->
+
+<script>
+
+document
+.getElementById("requestForm")
+.addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+
+    /*
+       ==========================================
+       Telegram:vanNianz
+       ==========================================
+    */
+
+    const VANNIAN_USERNAME = "USERNAME";
+
+
+    // Lấy dữ liệu từ form
+
+    const gameName =
+        document.getElementById("gameName").value.trim();
+
+    const device =
+        document.getElementById("device").value;
+
+    const requestContent =
+        document.getElementById("requestContent").value.trim();
+
+    const customerTelegram =
+        document.getElementById("customerTelegram").value.trim();
+
+
+    // Kiểm tra
+
+    if (!gameName || !device || !requestContent) {
+
+        alert(
+            "⚠️ Vui lòng điền đầy đủ thông tin yêu cầu!"
+        );
+
+        return;
+
+    }
+
+
+    // Tạo nội dung tin nhắn
+
+    let message =
+
+`🔥 YÊU CẦU HỖ TRỢ VANNIAN
+
+🎮 Game / Phần mềm:
+${gameName}
+
+💻 Thiết bị:
+${device}
+
+📝 Nội dung yêu cầu:
+${requestContent}
+
+✈️ Telegram khách:
+${customerTelegram || "Không cung cấp"}
+
+━━━━━━━━━━━━━━
+VANNIANWEB
+Uy Tín Tạo Niềm Tin!`;
+
+
+    // Mã hóa nội dung tin nhắn
+
+    const encodedMessage =
+        encodeURIComponent(message);
+
+
+    // Link Telegram
+
+    const telegramURL =
+        `https://t.me/${VANNIAN_USERNAME}?text=${encodedMessage}`;
+
+
+    // Mở Telegram
+
+    window.location.href = telegramURL;
+
+});
+
+</script>
     <!-- FOOTER -->
 
     <footer>
